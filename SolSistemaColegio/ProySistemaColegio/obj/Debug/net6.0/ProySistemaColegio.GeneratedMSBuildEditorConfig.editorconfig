@@ -1,0 +1,153 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProySistemaColegio
+build_property.RootNamespace = ProySistemaColegio
+build_property.ProjectDir = D:\ASP .NET Core #C\SolSistemaColegio\ProySistemaColegio\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ASP .NET Core #C\SolSistemaColegio\ProySistemaColegio
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Curso/ActualizarCurso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cQWN0dWFsaXphckN1cnNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Curso/AnularCurso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cQW51bGFyQ3Vyc28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Curso/InsertarCurso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cSW5zZXJ0YXJDdXJzby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Curso/ListarCursos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cTGlzdGFyQ3Vyc29zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Estudiante/ActualizarEstudiante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxBY3R1YWxpemFyRXN0dWRpYW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Estudiante/AnularEstudiante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxBbnVsYXJFc3R1ZGlhbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Estudiante/ConsultarListadoAlumnos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxDb25zdWx0YXJMaXN0YWRvQWx1bW5vcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Estudiante/InsertarEstudiante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxJbnNlcnRhckVzdHVkaWFudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Matricula/AnularMatricula.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXEFudWxhck1hdHJpY3VsYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Matricula/InsertarMatricula.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXEluc2VydGFyTWF0cmljdWxhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Matricula/ListarMatriculas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXExpc3Rhck1hdHJpY3VsYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Producto/ActualizarProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQWN0dWFsaXphclByb2R1Y3RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Producto/AnularProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQW51bGFyUHJvZHVjdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Producto/InsertarProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5zZXJ0YXJQcm9kdWN0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Producto/ListarProductos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cTGlzdGFyUHJvZHVjdG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Profesor/ActualizarProfesor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzb3JcQWN0dWFsaXphclByb2Zlc29yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Profesor/AnularProfesor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzb3JcQW51bGFyUHJvZmVzb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Profesor/InsertarProfesor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzb3JcSW5zZXJ0YXJQcm9mZXNvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Profesor/ListarListadoProfesores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzb3JcTGlzdGFyTGlzdGFkb1Byb2Zlc29yZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Salon/ActualizarSalon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fsb25cQWN0dWFsaXphclNhbG9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Salon/AnularSalon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fsb25cQW51bGFyU2Fsb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Salon/InsertarSalon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fsb25cSW5zZXJ0YXJTYWxvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Salon/ListarSalones.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fsb25cTGlzdGFyU2Fsb25lcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Tienda/AgregarCarrito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXEFncmVnYXJDYXJyaXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Tienda/ListarProductosTienda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXExpc3RhclByb2R1Y3Rvc1RpZW5kYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Tienda/PagarCarrito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXFBhZ2FyQ2Fycml0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Tienda/VerCarrito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXFZlckNhcnJpdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP .NET Core \#C/SolSistemaColegio/ProySistemaColegio/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bl3mcv3eqq

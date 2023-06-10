@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ProySistemaColegio.Models.Procedimientos_almacenados.sp_listar_cursosCCModel>
+
+@{
+    ViewData["Title"] = "ListarCursos";
+}
+
+<div class="d-flex justify-content-between">
+    <h1>Listado de cursos</h1>
+    <p>
+        <a asp-action="InsertarCurso" class="btn btn-primary">Agregar curso</a>
+    </p>
+</div>
+<br />
+
+
+<table class="table table-hover align-middle text-center">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.gra_desc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cur_desc)
+            </th>
+            <th>Mantenimiento</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.gra_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cur_desc)
+            </td>
+            <td>
+                    @Html.ActionLink("Edi", "ActualizarCurso", new { id=item.cur_cod }, new { @class= "btn btn-outline-info"}) |
+                    @Html.ActionLink("Eli", "AnularCurso", new { id=item.cur_cod }, new { @class= "btn btn-outline-danger"}) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

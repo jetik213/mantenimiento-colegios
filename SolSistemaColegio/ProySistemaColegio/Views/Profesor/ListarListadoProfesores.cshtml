@@ -1,0 +1,108 @@
+﻿@model IEnumerable<ProySistemaColegio.Models.Procedimientos_almacenados.sp_listar_profesoresCCModel>
+
+@{
+    ViewData["Title"] = "Listado de Profesores";
+}
+
+<div class="d-flex justify-content-between">
+    <h1>Listado de profesores</h1>
+    <p>
+        <a asp-action="InsertarProfesor" class="btn btn-primary">Agregar profesor</a>
+    </p>
+</div>
+<br />
+<table class="table table-hover align-middle text-center">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_cod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_apePat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_apeMat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_fechNac)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dis_desc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dirPre_desc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_dir)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_tel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gen_desc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipDoc_desc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_docN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_suel)
+            </th>
+            <th>Mantenimiento</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_cod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_apePat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_apeMat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_fechNac)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dis_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dirPre_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_dir)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_tel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gen_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipDoc_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_docN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_suel)
+            </td>
+            <td>
+                    @Html.ActionLink("Edi", "ActualizarProfesor", new { id=item.pro_cod }, new { @class= "btn btn-outline-info"}) |
+                    @Html.ActionLink("Eli", "AnularProfesor", new { id=item.pro_cod }, new { @class= "btn btn-outline-danger"}) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

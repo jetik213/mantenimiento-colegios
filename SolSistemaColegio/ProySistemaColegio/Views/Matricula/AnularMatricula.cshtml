@@ -1,0 +1,16 @@
+﻿@model ProySistemaColegio.Models.Procedimientos_almacenados.sp_listar_matriculasCCModel
+
+@{
+    ViewData["Title"] = "Anular Matricula";
+}
+
+<h1 style="text-align: center;">Confirmar para eliminar matrícula</h1>
+    <hr />
+<div class="col-lg-6 offset-lg-3">
+    
+    
+    <form asp-action="AnularMatricula" class="form-group d-flex justify-content-center" id="btn-registrar-curso">
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="ListarMatriculas" class="btn btn-light">Cancelar</a>
+    </form>
+</div>

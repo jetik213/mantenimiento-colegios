@@ -1,0 +1,53 @@
+﻿@model ProTiendaColegio.Models.sp_listar_productosModel
+
+@{
+    ViewData["Title"] = "Agregar productos";
+}
+
+<h1 style="text-align: center;">Agregar al carrito</h1>
+    <hr />
+<div class="col-lg-6 offset-lg-3">
+    <dl class="row justify-content-center" style="text-align: center;">
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_desc)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_desc)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.cat_desc)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.cat_desc)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_stock)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_stock)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_precio)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_precio)
+        </dd>
+    </dl>
+</div>
+<div class="row justify-content-center" style="text-align: center;">
+    @using (Html.BeginForm())
+    {
+          <div>
+            @Html.Hidden("id", Model.pro_cod)
+            Ingrese cantidad: @Html.TextBox("Cantidad",1)
+            <br/>
+            <button type="submit" class="btn btn-primary">Agregar</button> |
+            <a asp-action="ListarProductosTienda" class="btn btn-light">Regresar</a>
+          </div>
+    }
+</div>
+<br/>
+<p class="alert alert-dismissible alert-secondary">
+    @ViewBag.MENSAJE
+</p>
+

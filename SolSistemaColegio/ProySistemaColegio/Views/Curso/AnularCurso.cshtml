@@ -1,0 +1,29 @@
+﻿@model ProySistemaColegio.Models.CursoModel
+
+@{
+    ViewData["Title"] = "AnularCurso";
+}
+
+<h1 style="text-align: center;">Confirmar para eliminar curso</h1>
+    <hr />
+<div class="col-lg-6 offset-lg-3">
+    <dl class="row justify-content-center" style="text-align: center;">
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.cur_cod)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.cur_cod)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.cur_desc)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.cur_desc)
+        </dd>
+    </dl>
+    
+    <form asp-action="AnularCurso" class="form-group d-flex justify-content-center" id="btn-registrar-curso">
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="ListarCursos" class="btn btn-light">Cancelar</a>
+    </form>
+</div>

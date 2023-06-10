@@ -1,0 +1,41 @@
+﻿@model ProySistemaColegio.Models.Procedimientos_almacenados.sp_listar_salonCCModel
+
+@{
+    ViewData["Title"] = "AnularSalon";
+}
+
+<h1 style="text-align: center;">Confirmar para eliminar salón</h1>
+    <hr />
+<div class="col-lg-6 offset-lg-3">
+    <dl class="row justify-content-center" style="text-align: center;">
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.sal_cod)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.sal_cod)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_nom)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_nom)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.gra_desc)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.gra_desc)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.cur_desc)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.cur_desc)
+        </dd>
+    </dl>
+    
+    <form asp-action="AnularSalon" class="form-group d-flex justify-content-center" id="btn-registrar-curso">
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="ListarSalones" class="btn btn-light">Cancelar</a>
+    </form>
+</div>

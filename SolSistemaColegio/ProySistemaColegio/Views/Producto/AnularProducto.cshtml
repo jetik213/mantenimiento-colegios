@@ -1,0 +1,47 @@
+﻿@model ProySistemaColegio.Models.Procedimientos_almacenados.sp_listar_productosModel
+
+@{
+    ViewData["Title"] = "Anular Producto";
+}
+
+<h1 style="text-align: center;">Confirmar para eliminar producto</h1>
+    <hr />
+<div class="col-lg-6 offset-lg-3">
+    <dl class="row justify-content-center" style="text-align: center;">
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_cod)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_cod)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_desc)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_desc)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.cat_desc)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.cat_desc)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_stock)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_stock)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_precio)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_precio)
+        </dd>
+    </dl>
+    
+    <form asp-action="AnularProducto" class="form-group d-flex justify-content-center" id="btn-registrar-curso">
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="ListarProductos" class="btn btn-light">Cancelar</a>
+    </form>
+</div>

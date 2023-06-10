@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ProySistemaColegio.Models.Procedimientos_almacenados.sp_listar_matriculasCCModel>
+
+@{
+    ViewData["Title"] = "ListarMatriculas";
+}
+<div class="d-flex justify-content-between">
+    <h1>Listado de matrículas</h1>
+    <p>
+        <a asp-action="InsertarMatricula" class="btn btn-primary">Registrar matrícula</a>
+    </p>
+</div>
+<br />
+<table class="table table-hover align-middle text-center">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.mat_cod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.est_nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sal_cod)
+            </th>
+            <th>Mantenimiento</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.mat_cod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.est_nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sal_cod)
+            </td>
+            <td>
+                    @Html.ActionLink("Retirar matrícula", "AnularMatricula", new { id=item.mat_cod }, new { @class= "btn btn-outline-danger"})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

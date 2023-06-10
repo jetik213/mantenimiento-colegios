@@ -1,0 +1,95 @@
+﻿@model ProySistemaColegio.Models.ProfesorModel
+
+@{
+    ViewData["Title"] = "InsertarProfesor";
+}
+<div class="d-flex justify-content-between">
+    <h1>Registrar nuevo profesor</h1>
+    <a asp-action="ListarListadoProfesores" class="btn btn-light" id="btn-regresar-listado">Regresar al listado</a>
+</div>
+<hr />
+<div class="form-group row">
+    <div>
+        <form asp-action="InsertarProfesor" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>    
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label asp-for="pro_nom" class="col-form-label col-form-label-sm mt-4"></label>
+                    <input asp-for="pro_nom" class="form-control form-control-sm" />
+                    <span asp-validation-for="pro_nom" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label asp-for="pro_apePat" class="col-form-label col-form-label-sm mt-4"></label>
+                    <input asp-for="pro_apePat" class="form-control form-control-sm" />
+                    <span asp-validation-for="pro_apePat" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label asp-for="pro_apeMat" class="col-form-label col-form-label-sm mt-4"></label>
+                    <input asp-for="pro_apeMat" class="form-control form-control-sm" />
+                    <span asp-validation-for="pro_apeMat" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label asp-for="pro_fechNac" class="col-form-label col-form-label-sm mt-4"></label>
+                    <input asp-for="pro_fechNac" class="form-control form-control-sm" />
+                    <span asp-validation-for="pro_fechNac" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-2">
+                    <label asp-for="dis_cod" class="col-form-label col-form-label-sm mt-4"></label>
+                    @Html.DropDownList("dis_cod", (SelectList)ViewBag.DISTRITOS,
+                      "Seleccione", new {@class = "form-select form-select-sm"})
+                    <span asp-validation-for="dis_cod" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-2">
+                    <label asp-for="dirPre_cod" class="col-form-label col-form-label-sm mt-4"></label>
+                    @Html.DropDownList("dirPre_cod", (SelectList)ViewBag.DIRPREFIJOS,
+                      "Seleccione", new {@class = "form-select form-select-sm"})
+                    <span asp-validation-for="dirPre_cod" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="pro_dir" class="col-form-label col-form-label-sm mt-4"></label>
+                    <input asp-for="pro_dir" class="form-control form-control-sm" />
+                    <span asp-validation-for="pro_dir" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-2">
+                    <label asp-for="pro_tel" class="col-form-label col-form-label-sm mt-4"></label>
+                    <input asp-for="pro_tel" class="form-control form-control-sm" />
+                    <span asp-validation-for="pro_tel" class="text-danger"></span>
+                </div>
+            </div>   
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label asp-for="gen_cod" class="col-form-label col-form-label-sm mt-4"></label>
+                    @Html.DropDownList("gen_cod", (SelectList)ViewBag.GENEROS,
+                      "Seleccione", new {@class = "form-select form-select-sm"})
+                    <span asp-validation-for="gen_cod" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label asp-for="tipDoc_cod" class="col-form-label col-form-label-sm mt-4"></label>
+                    @Html.DropDownList("tipDoc_cod", (SelectList)ViewBag.TIPODOCS,
+                      "Seleccione", new {@class = "form-select form-select-sm"})
+                    <span asp-validation-for="tipDoc_cod" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label asp-for="pro_docN" class="col-form-label col-form-label-sm mt-4"></label>
+                    <input asp-for="pro_docN" class="form-control form-control-sm" />
+                    <span asp-validation-for="pro_docN" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-2">
+                    <label asp-for="pro_suel" class="col-form-label col-form-label-sm mt-4"></label>
+                    <input asp-for="pro_suel" class="form-control form-control-sm" />
+                    <span asp-validation-for="pro_suel" class="text-danger"></span>
+                </div>
+            </div> 
+            <div class="form-group d-flex justify-content-center" id="btn-registrar-curso">
+                <input type="submit" value="Registrar" class="btn btn-primary btn-lg" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

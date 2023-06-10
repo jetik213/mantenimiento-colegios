@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ProySistemaColegio.Models.CarritoModel>
+
+@{
+    ViewData["Title"] = "VerCarrito";
+}
+
+<h1>VerCarrito</h1>
+
+<p>
+    <a asp-action="PagarCarrito">Pagar</a>
+    <a asp-action="ListarProductosTienda">Seguir comprando</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Codigo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cantidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Importe)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Codigo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Importe)
+            </td>
+            <td>
+                <div>
+              <form asp-action="Eliminar" asp-route-id="@item.Codigo" method="post">
+                 <div>
+                   <button type="submit" class="btn btn-danger" onclick="return confirm('Estás seguro de eliminar el producto: @item.Descripcion')">
+                    Eliminar
+                    </button>
+                 </div>
+              </form>
+      @*      </div>
+                @Html.ActionLink("Eliminar", "Eliminar", new { id=item.Codigo })
+            </td>*@
+        </tr>
+}
+    </tbody>
+</table>
+<br />
+<div class="alert alert-success"> 
+    Total a pagar:<strong>@ViewBag.TOTAL</strong>
+</div>

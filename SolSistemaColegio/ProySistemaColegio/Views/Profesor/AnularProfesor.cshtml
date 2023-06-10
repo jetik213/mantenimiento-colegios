@@ -1,0 +1,95 @@
+﻿@model ProySistemaColegio.Models.ProfesorModel
+
+@{
+    ViewData["Title"] = "AnularProfesor";
+}
+
+<h1 style="text-align: center;">Confirmar para eliminar profesor</h1>
+    <hr />
+<div class="col-lg-6 offset-lg-3">
+    <dl class="row justify-content-center" style="text-align: center;">
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_cod)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_cod)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_nom)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_nom)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_apePat)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_apePat)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_apeMat)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_apeMat)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_fechNac)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_fechNac)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.dis_cod)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.dis_cod)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.dirPre_cod)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.dirPre_cod)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_dir)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_dir)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_tel)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_tel)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.gen_cod)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.gen_cod)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.tipDoc_cod)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.tipDoc_cod)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_docN)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_docN)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.pro_suel)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.pro_suel)
+        </dd>
+    </dl>
+    
+    <form asp-action="AnularProfesor" class="form-group d-flex justify-content-center" id="btn-registrar-curso">
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="ListarListadoProfesores" class="btn btn-light">Cancelar</a>
+    </form>
+</div>

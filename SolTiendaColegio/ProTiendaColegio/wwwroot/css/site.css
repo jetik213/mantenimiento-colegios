@@ -1,0 +1,60 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Header */
+
+#carritoDeCompras {
+    width: 1.2vw;
+    margin-left: .3vw;
+}
+
+#container-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#carosuel-color {
+    background: white;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+#btn-registrar-curso {
+    margin-top: 2vw;
+}
+
+#input-curso {
+    margin: auto;
+    text-align: center;
+}
+
+#div-input-curso {
+    margin: auto;
+    width: 50%;
+}
+
+#btn-regresar-listado {
+    margin-top: auto;
+}
+
+#form-insertar-producto {
+    margin: auto;
+}

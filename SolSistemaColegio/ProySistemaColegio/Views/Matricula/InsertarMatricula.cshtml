@@ -1,0 +1,39 @@
+﻿@model ProySistemaColegio.Models.Procedimientos_almacenados.sp_insertar_matriculaModel
+
+@{
+    ViewData["Title"] = "InsertarMatricula";
+}
+<div class="d-flex justify-content-between">
+    <h1>Registrar nueva matrícula</h1>
+    <a asp-action="ListarMatriculas" class="btn btn-light" id="btn-regresar-listado">Regresar al listado</a>
+</div>
+<hr />
+<div class="form-group row">
+    <div >
+        <form asp-action="InsertarMatricula" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="gra_cod" class="col-form-label col-form-label-sm mt-4"></label>
+                    @Html.DropDownList("gra_cod", (SelectList)ViewBag.GRADOS,
+                      "Seleccione", new {@class = "form-select form-select-sm"})
+                    <span asp-validation-for="gra_cod" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="est_cod" class="col-form-label col-form-label-sm mt-4"></label>
+                    @Html.DropDownList("est_cod", (SelectList)ViewBag.ESTUDIANTES,
+                      "Seleccione", new {@class = "form-select form-select-sm"})
+                    <span asp-validation-for="est_cod" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group d-flex justify-content-center" id="btn-registrar-curso">
+                <input type="submit" value="Registrar" class="btn btn-primary btn-lg" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

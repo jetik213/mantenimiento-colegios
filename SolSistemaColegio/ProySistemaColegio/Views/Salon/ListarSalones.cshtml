@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ProySistemaColegio.Models.Procedimientos_almacenados.sp_listar_salonCCModel>
+
+@{
+    ViewData["Title"] = "ListarSalones";
+}
+<div class="d-flex justify-content-between">
+    <h1>Listado de salones</h1>
+    <p>
+        <a asp-action="InsertarSalon" class="btn btn-primary">Registrar salón</a>
+    </p>
+    </div>
+<br />
+<table class="table table-hover align-middle text-center">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.sal_cod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gra_desc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cur_desc)
+            </th>
+            <th>Mantenimiento</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.sal_cod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gra_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cur_desc)
+            </td>
+            <td>
+                    @Html.ActionLink("Edi", "ActualizarSalon", new { id=item.sal_cod  }, new { @class= "btn btn-outline-info"}) |
+                    @Html.ActionLink("Eli", "AnularSalon", new { id=item.sal_cod  }, new { @class= "btn btn-outline-danger"})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

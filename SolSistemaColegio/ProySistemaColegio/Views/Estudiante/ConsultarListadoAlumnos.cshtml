@@ -1,0 +1,103 @@
+﻿@model IEnumerable<ProySistemaColegio.Models.Procedimientos_almacenados.sp_listar_estudiantesModel>
+
+@{
+    ViewData["Title"] = "ConsultarListadoAlumnos";
+}
+
+<div class="d-flex justify-content-between">
+    <h1>Listado de alumnos</h1>
+    <p>
+        <a asp-action="InsertarEstudiante" class="btn btn-primary">Agregar estudiante</a>
+    </p>
+</div>
+<br />
+
+<table class="table table-hover align-middle text-center">
+    <thead>
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.est_cod)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.est_nom)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.est_apePat)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.est_apeMat)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.est_fechNac)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.dis_desc)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.dirPre_desc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.est_dir)
+            </th scope="col">
+            <th>
+                @Html.DisplayNameFor(model => model.est_tel)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.gen_desc)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.tipDoc_desc)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.est_docN)
+            </th>
+            <th scope="col">Mantenimiento</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.est_cod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.est_nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.est_apePat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.est_apeMat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.est_fechNac)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dis_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dirPre_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.est_dir)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.est_tel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gen_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipDoc_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.est_docN)
+            </td>
+            <td>
+                @Html.ActionLink("Edi", "ActualizarEstudiante", new { id=item.est_cod }, new { @class= "btn btn-outline-info"}) |
+                @Html.ActionLink("Eli", "AnularEstudiante", new { id=item.est_cod }, new { @class= "btn btn-outline-danger"}) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

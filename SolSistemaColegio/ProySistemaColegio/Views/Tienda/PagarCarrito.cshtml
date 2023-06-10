@@ -1,0 +1,75 @@
+﻿@model IEnumerable<ProySistemaColegio.Models.CarritoModel>
+
+@{
+    ViewData["Title"] = "PagarCarrito";
+    decimal TOTAL = Model.Sum(x => x.Importe);
+}
+
+<h1>Pagar Carrito</h1>
+<form asp-action="PagarCarrito" method="post">
+  <div>
+    Fecha: <strong>@DateTime.Now.ToShortDateString()</strong>
+    <br/>
+    <hr/>
+    <button type="submit" class="btn btn-primary">Pagar</button> |
+    <a asp-action="VerCarrito" class="btn btn-warning">Modificar Carrito</a>
+  </div>
+</form>
+<div class="alert alert-info">
+    Total a pagar: <strong>@TOTAL</strong>
+</div>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Codigo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cantidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Importe)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Codigo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Importe)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<br />
+<div class="alert alert-danger">
+    @ViewBag.MENSAJE
+</div>

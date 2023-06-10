@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ProySistemaColegio.Models.Procedimientos_almacenados.sp_listar_productosModel>
+
+@{
+    ViewData["Title"] = "ListarProductosTienda";
+}
+
+<h1>ListarProductosTienda</h1>
+
+<p>
+    <a asp-action="VerCarrito">Ver Carrito</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_cod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_desc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cat_desc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_stock)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pro_precio)
+            </th>
+            <th>Mantenimiento</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_cod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cat_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_stock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pro_precio)
+            </td>
+            <td>
+                    @Html.ActionLink("Agregar", "AgregarCarrito", new {  id=item.pro_cod })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
